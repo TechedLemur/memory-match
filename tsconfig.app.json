@@ -8,7 +8,8 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "vue/__globalTypes_3.4_false": ["node_modules/vue/__globalTypes_3.4_false.d.ts"]
     }
   }
 }
