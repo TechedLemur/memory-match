@@ -37,6 +37,9 @@ devDependencies:
   '@vue/tsconfig':
     specifier: ^0.5.1
     version: 0.5.1
+  '@vue/typescript-plugin':
+    specifier: 2.1.2
+    version: 2.1.2(typescript@5.4.5)
   eslint:
     specifier: ^8.57.0
     version: 8.57.0
@@ -56,8 +59,8 @@ devDependencies:
     specifier: ^5.3.1
     version: 5.4.2(@types/node@20.16.2)
   vue-tsc:
-    specifier: ^2.0.21
-    version: 2.1.0(typescript@5.4.5)
+    specifier: ^2.1.2
+    version: 2.1.2(typescript@5.4.5)
 
 packages:
 
@@ -1105,8 +1108,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vue/language-core@2.1.0(typescript@5.4.5):
-    resolution: {integrity: sha512-S7uUdQXn4aA7QloQeAIhKDkP243nCEktQu1Kxur1fJFfedf+izBTb9bAR2tHe0V7xhFYhIwkNCtQl2AlKFaW3w==}
+  /@vue/language-core@2.1.2(typescript@5.4.5):
+    resolution: {integrity: sha512-tt2J7C+l0J/T5PaLhJ0jvCCi0JNwu3e8azWTYxW3jmAW5B/dac0g5UxmI7l59CQgCGFotqUqI3tXjfZgoWNtog==}
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
@@ -1157,6 +1160,16 @@ packages:
 
   /@vue/tsconfig@0.5.1:
     resolution: {integrity: sha512-VcZK7MvpjuTPx2w6blwnwZAu5/LgBUtejFOi3pPGQFXQN5Ela03FUtd2Qtg4yWGGissVL0dr6Ro1LfOFh+PCuQ==}
+    dev: true
+
+  /@vue/typescript-plugin@2.1.2(typescript@5.4.5):
+    resolution: {integrity: sha512-F96IB5biZJQ7QckSts62VtKy6YY3FnZTlhkph0p8MyJnngcmQpOI8HwgigIiQcOI0uC6L2TqBdrFHOpG2SMn3Q==}
+    dependencies:
+      '@volar/typescript': 2.4.1
+      '@vue/language-core': 2.1.2(typescript@5.4.5)
+      '@vue/shared': 3.4.38
+    transitivePeerDependencies:
+      - typescript
     dev: true
 
   /acorn-jsx@5.3.2(acorn@8.12.1):
@@ -2324,14 +2337,14 @@ packages:
       - supports-color
     dev: true
 
-  /vue-tsc@2.1.0(typescript@5.4.5):
-    resolution: {integrity: sha512-N6kelLgHPLiDzkeWfsfrfR79POitZ59M/2HaRWk4BW0ED40FlyQaVhGUvjg8VRPPJWic1M974cRTGIBR6zfgwQ==}
+  /vue-tsc@2.1.2(typescript@5.4.5):
+    resolution: {integrity: sha512-PH1BDxWT3eaPhl73elyZj6DV0nR3K4IFoUM1sGzMXXQneovVUwHQytdSyAHiED5MtEINGSHpL/Hs9ch+c/tDTw==}
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
     dependencies:
       '@volar/typescript': 2.4.1
-      '@vue/language-core': 2.1.0(typescript@5.4.5)
+      '@vue/language-core': 2.1.2(typescript@5.4.5)
       semver: 7.6.3
       typescript: 5.4.5
     dev: true
